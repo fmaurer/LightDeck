@@ -1,0 +1,148 @@
+<html>
+    
+    <head>
+        <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+        <style>
+            body {
+                font-family:Georgia;
+                font-size:1.5em;
+                margin:0;padding:0;
+            }
+            
+            ul {
+                padding:0;
+                text-align:center;
+            }
+            
+            #container {
+                width:100%;
+                height:600px;
+            }
+            
+            div#lights, div#controls {
+                width:100%;
+            }
+            
+            #lights ul li{
+                display:inline-block;
+                width:31%;
+            }
+            
+            input[type=radio]{
+                right:25px;
+            }
+            
+            div.column {
+                float:left;
+                width:50%;
+                position:relative;
+            }
+            
+            div.column ul li{
+                list-style-type: none;
+                text-align:right;
+                width:50%;
+            }
+            
+            div#controls input {
+                width:90%;
+                margin-left:5%;
+                
+            }
+            
+            textarea#response {
+                width:90%;
+				height:150px;
+				margin-left:5%;
+				margin-top:5%;
+            }
+            
+            h1 {
+                font-size:1em;
+                text-indent:1em;
+            }
+            </style>
+        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>-->
+        <script src="js/jquery-1.4.4.min.js"></script>
+        <!--<script type="text/javascript" src="js/WebSocketTest2.js"></script>-->
+        <script type="text/javascript">
+            $(document).ready(function() {
+                        if ("WebSocket" in window)
+                        {
+                            var ws = new WebSocket("ws://10.0.1.205:11111/service");
+                            ws.onopen = function()
+                            {
+                                // Web Socket is connected
+                                $("textarea#response").empty().append("socket opened"); 
+
+                                // You can send data now
+                                //ws.send("Hey man, you got the time?");
+                            };
+                            ws.onmessage = function(evt) { $("textarea#response").empty().append(evt.data); };
+                            ws.onclose = function() { $("textarea#response").empty().append("socket closed");
+                              };
+                        }
+                        else
+                        {
+                            alert("Browser doesn't support WebSocket!");
+                        }
+                              
+                      $("input").click(function() {
+                       /*$.post("post.html", $("form#lightControl").serialize(), function(data){
+                        $("textarea#response").empty().append(data);
+                        });*/
+                       ws.send($("form#lightControl").serialize());
+                       });           
+                  });
+        </script>
+        
+    </head>
+    
+    <body>
+        <div id="container">
+            <form action="post.html" type="POST" id="lightControl">
+                <div id="lights">
+                    <h1>Lights:</h1>
+                    <ul>
+                        <li>1:<input type="checkbox" name="light" value="1"/></li>
+                        <li>2:<input type="checkbox" name="light" value="2"/></li>
+                        <li>3:<input type="checkbox" name="light" value="3"/></li>
+                        <li>4:<input type="checkbox" name="light" value="4"/></li>
+                        <li>5:<input type="checkbox" name="light" value="5"/></li>
+                        <li>6:<input type="checkbox" name="light" value="6"/></li>
+                    </ul>
+                </div>
+                
+                <div class="column">
+                    <h1>Color:</h1>
+                    <ul>
+                        <li>red:<input type="radio" name="color" value="red"/></li>
+                        <li>purple:<input type="radio" name="color" value="purple"/></li>
+                        <li>blue:<input type="radio" name="color" value="blue"/></li>
+                        <li>teal:<input type="radio" name="color" value="teal"/></li>
+                        <li>green:<input type="radio" name="color" value="green"/></li>
+                        <li>white:<input type="radio" name="color" value="white"/></li>
+                    </ul>
+                </div>
+                
+                <div class="column">
+                    <h1>Brightness:</h1>
+                    <ul>
+                        <li>100%<input type="radio" name="brightness" value="1"/></li>
+                        <li>75%<input type="radio" name="brightness" value="0.75"/></li>
+                        <li>50%<input type="radio" name="brightness" value="0.5"/></li>
+                        <li>25%<input type="radio" name="brightness" value="0.25"/></li>
+                        <li>0%<input type="radio" name="brightness" value="0"/></li>
+                    </ul>
+                </div>
+                
+                <div id="controls">
+                    <input type="button" name="bump" value="bump"/>
+                    <textarea id="response"></textarea>
+                </div>
+                </div>
+        </div>
+        
+    </body>
+    
+</html>

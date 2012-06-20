@@ -1,0 +1,110 @@
+<html>
+    
+    <head>
+        
+        <style>
+            #container {
+                width:100%;
+                border:1px solid black;
+            }
+            
+            div#lights, div#controls {
+                width:100%;
+            }
+            
+            #lights ul li{
+                display:inline-block;
+                width:31%;
+            }
+            
+            div.column {
+                float:left;
+                width:50%;
+            }
+            
+            div.column ul li{
+                list-style-type: none;
+                text-align:right;
+                width:50%;
+            }
+            
+            div#controls input {
+                width:90%;
+                margin-left:5%;
+            }
+            
+            textarea#response {
+                width:90%;
+				height:150px;
+				margin-left:5%;
+				margin-top:5%;
+            }
+            
+            h1 {
+                font-size:1em;
+                text-indent:1em;
+            }
+            </style>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="js/jquery-1.4.4.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                              $("input").click(function() {
+                                               $.post("post.html", $("form#lightControl").serialize(), function(data){
+                                                      $("textarea#response").empty().append(data);
+                                                      });
+                                               });
+                              });
+            </script>
+        
+    </head>
+    
+    <body>
+        
+        <div id="container">
+            <form action="post.html" type="POST" id="lightControl">
+                <div id="lights">
+                    <h1>Lights:</h1>
+                    <ul>
+                        <li>1:<input type="checkbox" name="light" value="1"/></li>
+                        <li>2:<input type="checkbox" name="light" value="2"/></li>
+                        <li>3:<input type="checkbox" name="light" value="3"/></li>
+                        <li>4:<input type="checkbox" name="light" value="4"/></li>
+                        <li>5:<input type="checkbox" name="light" value="5"/></li>
+                        <li>6:<input type="checkbox" name="light" value="6"/></li>
+                    </ul>
+                </div>
+                
+                <div class="column">
+                    <h1>Color:</h1>
+                    <ul>
+                        <li>red:<input type="radio" name="color"/></li>
+                        <li>purple:<input type="radio" name="color"/></li>
+                        <li>blue:<input type="radio" name="color"/></li>
+                        <li>teal:<input type="radio" name="color"/></li>
+                        <li>green:<input type="radio" name="color"/></li>
+                        <li>white:<input type="radio" name="color"/></li>
+                    </ul>
+                </div>
+                
+                <div class="column">
+                    <h1>Brightness:</h1>
+                    <ul>
+                        <li>100%<input type="radio" name="brightness" value="1"/></li>
+                        <li>75%<input type="radio" name="brightness" value="0.75"/></li>
+                        <li>50%<input type="radio" name="brightness" value="0.5"/></li>
+                        <li>25%<input type="radio" name="brightness" value="0.25"/></li>
+                        <li>0%<input type="radio" name="brightness" value="0"/></li>
+                    </ul>
+                </div>
+                
+                <div id="controls">
+                    <input type="button" name="bump" value="bump"/>
+                    <textarea id="response" disabled></textarea>
+                </div>
+                </div>
+        </div>
+        
+    </body>
+    
+</html>

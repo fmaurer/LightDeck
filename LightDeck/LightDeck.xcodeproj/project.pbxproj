@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A230DCAD152B5D7700902C26 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A230DCAC152B5D7700902C26 /* Cocoa.framework */; };
+		A230DCB7152B5D7700902C26 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A230DCB5152B5D7700902C26 /* InfoPlist.strings */; };
+		A230DCB9152B5D7700902C26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A230DCB8152B5D7700902C26 /* main.m */; };
+		A230DCBD152B5D7700902C26 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = A230DCBB152B5D7700902C26 /* Credits.rtf */; };
+		A230DCC0152B5D7700902C26 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A230DCBF152B5D7700902C26 /* AppDelegate.m */; };
+		A230DCC3152B5D7700902C26 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A230DCC1152B5D7700902C26 /* MainMenu.xib */; };
+		A230DCE6152B5D9300902C26 /* defaultChannelPreselections.plist in Resources */ = {isa = PBXBuildFile; fileRef = A230DCE0152B5D9300902C26 /* defaultChannelPreselections.plist */; };
+		A230DCE7152B5D9300902C26 /* defaultDMXValues.plist in Resources */ = {isa = PBXBuildFile; fileRef = A230DCE1152B5D9300902C26 /* defaultDMXValues.plist */; };
+		A230DCE8152B5D9300902C26 /* DMXChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = A230DCE3152B5D9300902C26 /* DMXChannel.m */; };
+		A230DCE9152B5D9300902C26 /* DMXChannels.m in Sources */ = {isa = PBXBuildFile; fileRef = A230DCE5152B5D9300902C26 /* DMXChannels.m */; };
+		A230DCF8152B5E9500902C26 /* AMSerialPort.m in Sources */ = {isa = PBXBuildFile; fileRef = A230DCEF152B5E9500902C26 /* AMSerialPort.m */; };
+		A230DCF9152B5E9500902C26 /* AMSerialPortAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = A230DCF1152B5E9500902C26 /* AMSerialPortAdditions.m */; };
+		A230DCFA152B5E9500902C26 /* AMSerialPortList.m in Sources */ = {isa = PBXBuildFile; fileRef = A230DCF3152B5E9500902C26 /* AMSerialPortList.m */; };
+		A230DCFB152B5E9500902C26 /* AMSerialPortList_Deprecated.m in Sources */ = {isa = PBXBuildFile; fileRef = A230DCF5152B5E9500902C26 /* AMSerialPortList_Deprecated.m */; };
+		A230DCFC152B5E9500902C26 /* AMStandardEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = A230DCF7152B5E9500902C26 /* AMStandardEnumerator.m */; };
+		A25B33D9154B9B1B005E037D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A25B33D8154B9B1B005E037D /* ViewController.m */; };
+		A2A5C21E152BF7ED00B2D0D0 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2A5C21D152BF7ED00B2D0D0 /* IOKit.framework */; };
+		A2A5C229152C11CB00B2D0D0 /* LightDeckController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2A5C228152C11CB00B2D0D0 /* LightDeckController.m */; };
+		A2B2E838154F6B1C003A49AF /* MyWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = A2B2E837154F6B1C003A49AF /* MyWebSocket.m */; };
+		A2B2E83B154F6C01003A49AF /* Web in Resources */ = {isa = PBXBuildFile; fileRef = A2B2E83A154F6C01003A49AF /* Web */; };
+		A2EACCFA152D5111009E7153 /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EACCC7152D5111009E7153 /* DDData.m */; };
+		A2EACCFB152D5111009E7153 /* DDNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EACCC9152D5111009E7153 /* DDNumber.m */; };
+		A2EACCFC152D5111009E7153 /* DDRange.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EACCCB152D5111009E7153 /* DDRange.m */; };
+		A2EACCFD152D5111009E7153 /* HTTPAuthenticationRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EACCCD152D5111009E7153 /* HTTPAuthenticationRequest.m */; };
+		A2EACCFE152D5111009E7153 /* HTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EACCCF152D5111009E7153 /* HTTPConnection.m */; };
+		A2EACCFF152D5111009E7153 /* HTTPMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EACCD2152D5111009E7153 /* HTTPMessage.m */; };
+		A2EACD00152D5112009E7153 /* HTTPServer.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EACCD5152D5111009E7153 /* HTTPServer.m */; };
+		A2EACD01152D5112009E7153 /* HTTPAsyncFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EACCD8152D5111009E7153 /* HTTPAsyncFileResponse.m */; };
+		A2EACD02152D5112009E7153 /* HTTPDataResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EACCDA152D5111009E7153 /* HTTPDataResponse.m */; };
+		A2EACD03152D5112009E7153 /* HTTPDynamicFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EACCDC152D5111009E7153 /* HTTPDynamicFileResponse.m */; };
+		A2EACD04152D5112009E7153 /* HTTPFileResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EACCDE152D5111009E7153 /* HTTPFileResponse.m */; };
+		A2EACD05152D5112009E7153 /* HTTPRedirectResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EACCE0152D5111009E7153 /* HTTPRedirectResponse.m */; };
+		A2EACD06152D5112009E7153 /* WebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EACCE2152D5111009E7153 /* WebSocket.m */; };
+		A2EACD23152D5127009E7153 /* About.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2EACD12152D5127009E7153 /* About.txt */; };
+		A2EACD24152D5127009E7153 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EACD14152D5127009E7153 /* GCDAsyncSocket.m */; };
+		A2EACD25152D5127009E7153 /* About.txt in Resources */ = {isa = PBXBuildFile; fileRef = A2EACD16152D5127009E7153 /* About.txt */; };
+		A2EACD26152D5127009E7153 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EACD18152D5127009E7153 /* DDAbstractDatabaseLogger.m */; };
+		A2EACD27152D5127009E7153 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EACD1A152D5127009E7153 /* DDASLLogger.m */; };
+		A2EACD28152D5127009E7153 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EACD1C152D5127009E7153 /* DDFileLogger.m */; };
+		A2EACD29152D5127009E7153 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EACD1E152D5127009E7153 /* DDLog.m */; };
+		A2EACD2A152D5127009E7153 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EACD20152D5127009E7153 /* DDTTYLogger.m */; };
+		A2EACD2E152D513D009E7153 /* MyHTTPConnection.m in Sources */ = {isa = PBXBuildFile; fileRef = A2EACD2D152D513D009E7153 /* MyHTTPConnection.m */; };
+		A2EACD31152D539F009E7153 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2EACD30152D539F009E7153 /* Security.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A230DCA8152B5D7700902C26 /* LightDeck.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LightDeck.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A230DCAC152B5D7700902C26 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		A230DCAF152B5D7700902C26 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		A230DCB0152B5D7700902C26 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		A230DCB1152B5D7700902C26 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A230DCB4152B5D7700902C26 /* LightDeck-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LightDeck-Info.plist"; sourceTree = "<group>"; };
+		A230DCB6152B5D7700902C26 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A230DCB8152B5D7700902C26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A230DCBA152B5D7700902C26 /* LightDeck-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LightDeck-Prefix.pch"; sourceTree = "<group>"; };
+		A230DCBC152B5D7700902C26 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		A230DCBE152B5D7700902C26 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A230DCBF152B5D7700902C26 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A230DCC2152B5D7700902C26 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A230DCCA152B5D7700902C26 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		A230DCD1152B5D7700902C26 /* LightDeckTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LightDeckTests-Info.plist"; sourceTree = "<group>"; };
+		A230DCD3152B5D7700902C26 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A230DCD5152B5D7700902C26 /* LightDeckTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LightDeckTests.h; sourceTree = "<group>"; };
+		A230DCD6152B5D7700902C26 /* LightDeckTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LightDeckTests.m; sourceTree = "<group>"; };
+		A230DCE0152B5D9300902C26 /* defaultChannelPreselections.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = defaultChannelPreselections.plist; path = ../defaultChannelPreselections.plist; sourceTree = "<group>"; };
+		A230DCE1152B5D9300902C26 /* defaultDMXValues.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = defaultDMXValues.plist; path = ../defaultDMXValues.plist; sourceTree = "<group>"; };
+		A230DCE2152B5D9300902C26 /* DMXChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DMXChannel.h; path = ../DMXChannel.h; sourceTree = "<group>"; };
+		A230DCE3152B5D9300902C26 /* DMXChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DMXChannel.m; path = ../DMXChannel.m; sourceTree = "<group>"; };
+		A230DCE4152B5D9300902C26 /* DMXChannels.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DMXChannels.h; path = ../DMXChannels.h; sourceTree = "<group>"; };
+		A230DCE5152B5D9300902C26 /* DMXChannels.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DMXChannels.m; path = ../DMXChannels.m; sourceTree = "<group>"; };
+		A230DCEC152B5E9500902C26 /* AMSDKCompatibility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSDKCompatibility.h; sourceTree = "<group>"; };
+		A230DCED152B5E9500902C26 /* AMSerialErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialErrors.h; sourceTree = "<group>"; };
+		A230DCEE152B5E9500902C26 /* AMSerialPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialPort.h; sourceTree = "<group>"; };
+		A230DCEF152B5E9500902C26 /* AMSerialPort.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSerialPort.m; sourceTree = "<group>"; };
+		A230DCF0152B5E9500902C26 /* AMSerialPortAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialPortAdditions.h; sourceTree = "<group>"; };
+		A230DCF1152B5E9500902C26 /* AMSerialPortAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSerialPortAdditions.m; sourceTree = "<group>"; };
+		A230DCF2152B5E9500902C26 /* AMSerialPortList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialPortList.h; sourceTree = "<group>"; };
+		A230DCF3152B5E9500902C26 /* AMSerialPortList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSerialPortList.m; sourceTree = "<group>"; };
+		A230DCF4152B5E9500902C26 /* AMSerialPortList_Deprecated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMSerialPortList_Deprecated.h; sourceTree = "<group>"; };
+		A230DCF5152B5E9500902C26 /* AMSerialPortList_Deprecated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMSerialPortList_Deprecated.m; sourceTree = "<group>"; };
+		A230DCF6152B5E9500902C26 /* AMStandardEnumerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AMStandardEnumerator.h; sourceTree = "<group>"; };
+		A230DCF7152B5E9500902C26 /* AMStandardEnumerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AMStandardEnumerator.m; sourceTree = "<group>"; };
+		A25B33D7154B9B1A005E037D /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A25B33D8154B9B1B005E037D /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A2A5C21D152BF7ED00B2D0D0 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		A2A5C228152C11CB00B2D0D0 /* LightDeckController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LightDeckController.m; path = ../../LightDeckController.m; sourceTree = "<group>"; };
+		A2B2E836154F6B1C003A49AF /* MyWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyWebSocket.h; sourceTree = "<group>"; };
+		A2B2E837154F6B1C003A49AF /* MyWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyWebSocket.m; sourceTree = "<group>"; };
+		A2B2E83A154F6C01003A49AF /* Web */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Web; sourceTree = "<group>"; };
+		A2EACCC6152D5111009E7153 /* DDData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDData.h; sourceTree = "<group>"; };
+		A2EACCC7152D5111009E7153 /* DDData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDData.m; sourceTree = "<group>"; };
+		A2EACCC8152D5111009E7153 /* DDNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDNumber.h; sourceTree = "<group>"; };
+		A2EACCC9152D5111009E7153 /* DDNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDNumber.m; sourceTree = "<group>"; };
+		A2EACCCA152D5111009E7153 /* DDRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDRange.h; sourceTree = "<group>"; };
+		A2EACCCB152D5111009E7153 /* DDRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDRange.m; sourceTree = "<group>"; };
+		A2EACCCC152D5111009E7153 /* HTTPAuthenticationRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPAuthenticationRequest.h; sourceTree = "<group>"; };
+		A2EACCCD152D5111009E7153 /* HTTPAuthenticationRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPAuthenticationRequest.m; sourceTree = "<group>"; };
+		A2EACCCE152D5111009E7153 /* HTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPConnection.h; sourceTree = "<group>"; };
+		A2EACCCF152D5111009E7153 /* HTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPConnection.m; sourceTree = "<group>"; };
+		A2EACCD0152D5111009E7153 /* HTTPLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPLogging.h; sourceTree = "<group>"; };
+		A2EACCD1152D5111009E7153 /* HTTPMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPMessage.h; sourceTree = "<group>"; };
+		A2EACCD2152D5111009E7153 /* HTTPMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPMessage.m; sourceTree = "<group>"; };
+		A2EACCD3152D5111009E7153 /* HTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPResponse.h; sourceTree = "<group>"; };
+		A2EACCD4152D5111009E7153 /* HTTPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPServer.h; sourceTree = "<group>"; };
+		A2EACCD5152D5111009E7153 /* HTTPServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPServer.m; sourceTree = "<group>"; };
+		A2EACCD7152D5111009E7153 /* HTTPAsyncFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPAsyncFileResponse.h; sourceTree = "<group>"; };
+		A2EACCD8152D5111009E7153 /* HTTPAsyncFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPAsyncFileResponse.m; sourceTree = "<group>"; };
+		A2EACCD9152D5111009E7153 /* HTTPDataResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPDataResponse.h; sourceTree = "<group>"; };
+		A2EACCDA152D5111009E7153 /* HTTPDataResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDataResponse.m; sourceTree = "<group>"; };
+		A2EACCDB152D5111009E7153 /* HTTPDynamicFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPDynamicFileResponse.h; sourceTree = "<group>"; };
+		A2EACCDC152D5111009E7153 /* HTTPDynamicFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPDynamicFileResponse.m; sourceTree = "<group>"; };
+		A2EACCDD152D5111009E7153 /* HTTPFileResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPFileResponse.h; sourceTree = "<group>"; };
+		A2EACCDE152D5111009E7153 /* HTTPFileResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPFileResponse.m; sourceTree = "<group>"; };
+		A2EACCDF152D5111009E7153 /* HTTPRedirectResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPRedirectResponse.h; sourceTree = "<group>"; };
+		A2EACCE0152D5111009E7153 /* HTTPRedirectResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPRedirectResponse.m; sourceTree = "<group>"; };
+		A2EACCE1152D5111009E7153 /* WebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebSocket.h; sourceTree = "<group>"; };
+		A2EACCE2152D5111009E7153 /* WebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebSocket.m; sourceTree = "<group>"; };
+		A2EACD12152D5127009E7153 /* About.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = About.txt; sourceTree = "<group>"; };
+		A2EACD13152D5127009E7153 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		A2EACD14152D5127009E7153 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		A2EACD16152D5127009E7153 /* About.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = About.txt; sourceTree = "<group>"; };
+		A2EACD17152D5127009E7153 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		A2EACD18152D5127009E7153 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		A2EACD19152D5127009E7153 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		A2EACD1A152D5127009E7153 /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		A2EACD1B152D5127009E7153 /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		A2EACD1C152D5127009E7153 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		A2EACD1D152D5127009E7153 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		A2EACD1E152D5127009E7153 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		A2EACD1F152D5127009E7153 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		A2EACD20152D5127009E7153 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
+		A2EACD2C152D513D009E7153 /* MyHTTPConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyHTTPConnection.h; path = ../../MyHTTPConnection.h; sourceTree = "<group>"; };
+		A2EACD2D152D513D009E7153 /* MyHTTPConnection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyHTTPConnection.m; path = ../../MyHTTPConnection.m; sourceTree = "<group>"; };
+		A2EACD2F152D51AE009E7153 /* LightDeckController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LightDeckController.h; path = ../../LightDeckController.h; sourceTree = "<group>"; };
+		A2EACD30152D539F009E7153 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A230DCA5152B5D7700902C26 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2EACD31152D539F009E7153 /* Security.framework in Frameworks */,
+				A2A5C21E152BF7ED00B2D0D0 /* IOKit.framework in Frameworks */,
+				A230DCAD152B5D7700902C26 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A230DC9D152B5D7600902C26 = {
+			isa = PBXGroup;
+			children = (
+				A2EACCC3152D50F1009E7153 /* HTTPServer */,
+				A230DCB2152B5D7700902C26 /* LightDeck */,
+				A230DCCF152B5D7700902C26 /* LightDeckTests */,
+				A230DCAB152B5D7700902C26 /* Frameworks */,
+				A230DCA9152B5D7700902C26 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A230DCA9152B5D7700902C26 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A230DCA8152B5D7700902C26 /* LightDeck.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A230DCAB152B5D7700902C26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2EACD30152D539F009E7153 /* Security.framework */,
+				A2A5C21D152BF7ED00B2D0D0 /* IOKit.framework */,
+				A230DCAC152B5D7700902C26 /* Cocoa.framework */,
+				A230DCCA152B5D7700902C26 /* SenTestingKit.framework */,
+				A230DCAE152B5D7700902C26 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A230DCAE152B5D7700902C26 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A230DCAF152B5D7700902C26 /* AppKit.framework */,
+				A230DCB0152B5D7700902C26 /* CoreData.framework */,
+				A230DCB1152B5D7700902C26 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		A230DCB2152B5D7700902C26 /* LightDeck */ = {
+			isa = PBXGroup;
+			children = (
+				A230DCEB152B5E9500902C26 /* SerialComm */,
+				A230DCEA152B5E6900902C26 /* Resources */,
+				A2EACD2F152D51AE009E7153 /* LightDeckController.h */,
+				A2A5C228152C11CB00B2D0D0 /* LightDeckController.m */,
+				A230DCE2152B5D9300902C26 /* DMXChannel.h */,
+				A230DCE3152B5D9300902C26 /* DMXChannel.m */,
+				A230DCE4152B5D9300902C26 /* DMXChannels.h */,
+				A230DCE5152B5D9300902C26 /* DMXChannels.m */,
+				A230DCBE152B5D7700902C26 /* AppDelegate.h */,
+				A230DCBF152B5D7700902C26 /* AppDelegate.m */,
+				A2EACD2C152D513D009E7153 /* MyHTTPConnection.h */,
+				A2EACD2D152D513D009E7153 /* MyHTTPConnection.m */,
+				A25B33D7154B9B1A005E037D /* ViewController.h */,
+				A25B33D8154B9B1B005E037D /* ViewController.m */,
+				A2B2E836154F6B1C003A49AF /* MyWebSocket.h */,
+				A2B2E837154F6B1C003A49AF /* MyWebSocket.m */,
+				A230DCC1152B5D7700902C26 /* MainMenu.xib */,
+				A230DCB3152B5D7700902C26 /* Supporting Files */,
+			);
+			path = LightDeck;
+			sourceTree = "<group>";
+		};
+		A230DCB3152B5D7700902C26 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A230DCB4152B5D7700902C26 /* LightDeck-Info.plist */,
+				A230DCB5152B5D7700902C26 /* InfoPlist.strings */,
+				A230DCB8152B5D7700902C26 /* main.m */,
+				A230DCBA152B5D7700902C26 /* LightDeck-Prefix.pch */,
+				A230DCBB152B5D7700902C26 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A230DCCF152B5D7700902C26 /* LightDeckTests */ = {
+			isa = PBXGroup;
+			children = (
+				A230DCD5152B5D7700902C26 /* LightDeckTests.h */,
+				A230DCD6152B5D7700902C26 /* LightDeckTests.m */,
+				A230DCD0152B5D7700902C26 /* Supporting Files */,
+			);
+			path = LightDeckTests;
+			sourceTree = "<group>";
+		};
+		A230DCD0152B5D7700902C26 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A230DCD1152B5D7700902C26 /* LightDeckTests-Info.plist */,
+				A230DCD2152B5D7700902C26 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A230DCEA152B5E6900902C26 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A2B2E83A154F6C01003A49AF /* Web */,
+				A230DCE0152B5D9300902C26 /* defaultChannelPreselections.plist */,
+				A230DCE1152B5D9300902C26 /* defaultDMXValues.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		A230DCEB152B5E9500902C26 /* SerialComm */ = {
+			isa = PBXGroup;
+			children = (
+				A230DCEC152B5E9500902C26 /* AMSDKCompatibility.h */,
+				A230DCED152B5E9500902C26 /* AMSerialErrors.h */,
+				A230DCEE152B5E9500902C26 /* AMSerialPort.h */,
+				A230DCEF152B5E9500902C26 /* AMSerialPort.m */,
+				A230DCF0152B5E9500902C26 /* AMSerialPortAdditions.h */,
+				A230DCF1152B5E9500902C26 /* AMSerialPortAdditions.m */,
+				A230DCF2152B5E9500902C26 /* AMSerialPortList.h */,
+				A230DCF3152B5E9500902C26 /* AMSerialPortList.m */,
+				A230DCF4152B5E9500902C26 /* AMSerialPortList_Deprecated.h */,
+				A230DCF5152B5E9500902C26 /* AMSerialPortList_Deprecated.m */,
+				A230DCF6152B5E9500902C26 /* AMStandardEnumerator.h */,
+				A230DCF7152B5E9500902C26 /* AMStandardEnumerator.m */,
+			);
+			path = SerialComm;
+			sourceTree = "<group>";
+		};
+		A2EACCC3152D50F1009E7153 /* HTTPServer */ = {
+			isa = PBXGroup;
+			children = (
+				A2EACD10152D5127009E7153 /* Vendor */,
+				A2EACCC4152D5111009E7153 /* Core */,
+			);
+			name = HTTPServer;
+			sourceTree = "<group>";
+		};
+		A2EACCC4152D5111009E7153 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A2EACCC5152D5111009E7153 /* Categories */,
+				A2EACCCC152D5111009E7153 /* HTTPAuthenticationRequest.h */,
+				A2EACCCD152D5111009E7153 /* HTTPAuthenticationRequest.m */,
+				A2EACCCE152D5111009E7153 /* HTTPConnection.h */,
+				A2EACCCF152D5111009E7153 /* HTTPConnection.m */,
+				A2EACCD0152D5111009E7153 /* HTTPLogging.h */,
+				A2EACCD1152D5111009E7153 /* HTTPMessage.h */,
+				A2EACCD2152D5111009E7153 /* HTTPMessage.m */,
+				A2EACCD3152D5111009E7153 /* HTTPResponse.h */,
+				A2EACCD4152D5111009E7153 /* HTTPServer.h */,
+				A2EACCD5152D5111009E7153 /* HTTPServer.m */,
+				A2EACCD6152D5111009E7153 /* Responses */,
+				A2EACCE1152D5111009E7153 /* WebSocket.h */,
+				A2EACCE2152D5111009E7153 /* WebSocket.m */,
+			);
+			name = Core;
+			path = ../Core;
+			sourceTree = "<group>";
+		};
+		A2EACCC5152D5111009E7153 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				A2EACCC6152D5111009E7153 /* DDData.h */,
+				A2EACCC7152D5111009E7153 /* DDData.m */,
+				A2EACCC8152D5111009E7153 /* DDNumber.h */,
+				A2EACCC9152D5111009E7153 /* DDNumber.m */,
+				A2EACCCA152D5111009E7153 /* DDRange.h */,
+				A2EACCCB152D5111009E7153 /* DDRange.m */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		A2EACCD6152D5111009E7153 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				A2EACCD7152D5111009E7153 /* HTTPAsyncFileResponse.h */,
+				A2EACCD8152D5111009E7153 /* HTTPAsyncFileResponse.m */,
+				A2EACCD9152D5111009E7153 /* HTTPDataResponse.h */,
+				A2EACCDA152D5111009E7153 /* HTTPDataResponse.m */,
+				A2EACCDB152D5111009E7153 /* HTTPDynamicFileResponse.h */,
+				A2EACCDC152D5111009E7153 /* HTTPDynamicFileResponse.m */,
+				A2EACCDD152D5111009E7153 /* HTTPFileResponse.h */,
+				A2EACCDE152D5111009E7153 /* HTTPFileResponse.m */,
+				A2EACCDF152D5111009E7153 /* HTTPRedirectResponse.h */,
+				A2EACCE0152D5111009E7153 /* HTTPRedirectResponse.m */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		A2EACD10152D5127009E7153 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				A2EACD11152D5127009E7153 /* CocoaAsyncSocket */,
+				A2EACD15152D5127009E7153 /* CocoaLumberjack */,
+			);
+			name = Vendor;
+			path = ../Vendor;
+			sourceTree = "<group>";
+		};
+		A2EACD11152D5127009E7153 /* CocoaAsyncSocket */ = {
+			isa = PBXGroup;
+			children = (
+				A2EACD12152D5127009E7153 /* About.txt */,
+				A2EACD13152D5127009E7153 /* GCDAsyncSocket.h */,
+				A2EACD14152D5127009E7153 /* GCDAsyncSocket.m */,
+			);
+			path = CocoaAsyncSocket;
+			sourceTree = "<group>";
+		};
+		A2EACD15152D5127009E7153 /* CocoaLumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				A2EACD16152D5127009E7153 /* About.txt */,
+				A2EACD17152D5127009E7153 /* DDAbstractDatabaseLogger.h */,
+				A2EACD18152D5127009E7153 /* DDAbstractDatabaseLogger.m */,
+				A2EACD19152D5127009E7153 /* DDASLLogger.h */,
+				A2EACD1A152D5127009E7153 /* DDASLLogger.m */,
+				A2EACD1B152D5127009E7153 /* DDFileLogger.h */,
+				A2EACD1C152D5127009E7153 /* DDFileLogger.m */,
+				A2EACD1D152D5127009E7153 /* DDLog.h */,
+				A2EACD1E152D5127009E7153 /* DDLog.m */,
+				A2EACD1F152D5127009E7153 /* DDTTYLogger.h */,
+				A2EACD20152D5127009E7153 /* DDTTYLogger.m */,
+			);
+			path = CocoaLumberjack;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A230DCA7152B5D7700902C26 /* LightDeck */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A230DCDA152B5D7700902C26 /* Build configuration list for PBXNativeTarget "LightDeck" */;
+			buildPhases = (
+				A230DCA4152B5D7700902C26 /* Sources */,
+				A230DCA5152B5D7700902C26 /* Frameworks */,
+				A230DCA6152B5D7700902C26 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LightDeck;
+			productName = LightDeck;
+			productReference = A230DCA8152B5D7700902C26 /* LightDeck.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A230DC9F152B5D7600902C26 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "2215 22nd St";
+			};
+			buildConfigurationList = A230DCA2152B5D7600902C26 /* Build configuration list for PBXProject "LightDeck" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A230DC9D152B5D7600902C26;
+			productRefGroup = A230DCA9152B5D7700902C26 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A230DCA7152B5D7700902C26 /* LightDeck */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A230DCA6152B5D7700902C26 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A230DCB7152B5D7700902C26 /* InfoPlist.strings in Resources */,
+				A230DCBD152B5D7700902C26 /* Credits.rtf in Resources */,
+				A230DCC3152B5D7700902C26 /* MainMenu.xib in Resources */,
+				A230DCE6152B5D9300902C26 /* defaultChannelPreselections.plist in Resources */,
+				A230DCE7152B5D9300902C26 /* defaultDMXValues.plist in Resources */,
+				A2EACD23152D5127009E7153 /* About.txt in Resources */,
+				A2EACD25152D5127009E7153 /* About.txt in Resources */,
+				A2B2E83B154F6C01003A49AF /* Web in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A230DCA4152B5D7700902C26 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A230DCB9152B5D7700902C26 /* main.m in Sources */,
+				A230DCC0152B5D7700902C26 /* AppDelegate.m in Sources */,
+				A230DCE8152B5D9300902C26 /* DMXChannel.m in Sources */,
+				A230DCE9152B5D9300902C26 /* DMXChannels.m in Sources */,
+				A230DCF8152B5E9500902C26 /* AMSerialPort.m in Sources */,
+				A230DCF9152B5E9500902C26 /* AMSerialPortAdditions.m in Sources */,
+				A230DCFA152B5E9500902C26 /* AMSerialPortList.m in Sources */,
+				A230DCFB152B5E9500902C26 /* AMSerialPortList_Deprecated.m in Sources */,
+				A230DCFC152B5E9500902C26 /* AMStandardEnumerator.m in Sources */,
+				A2A5C229152C11CB00B2D0D0 /* LightDeckController.m in Sources */,
+				A2EACCFA152D5111009E7153 /* DDData.m in Sources */,
+				A2EACCFB152D5111009E7153 /* DDNumber.m in Sources */,
+				A2EACCFC152D5111009E7153 /* DDRange.m in Sources */,
+				A2EACCFD152D5111009E7153 /* HTTPAuthenticationRequest.m in Sources */,
+				A2EACCFE152D5111009E7153 /* HTTPConnection.m in Sources */,
+				A2EACCFF152D5111009E7153 /* HTTPMessage.m in Sources */,
+				A2EACD00152D5112009E7153 /* HTTPServer.m in Sources */,
+				A2EACD01152D5112009E7153 /* HTTPAsyncFileResponse.m in Sources */,
+				A2EACD02152D5112009E7153 /* HTTPDataResponse.m in Sources */,
+				A2EACD03152D5112009E7153 /* HTTPDynamicFileResponse.m in Sources */,
+				A2EACD04152D5112009E7153 /* HTTPFileResponse.m in Sources */,
+				A2EACD05152D5112009E7153 /* HTTPRedirectResponse.m in Sources */,
+				A2EACD06152D5112009E7153 /* WebSocket.m in Sources */,
+				A2EACD24152D5127009E7153 /* GCDAsyncSocket.m in Sources */,
+				A2EACD26152D5127009E7153 /* DDAbstractDatabaseLogger.m in Sources */,
+				A2EACD27152D5127009E7153 /* DDASLLogger.m in Sources */,
+				A2EACD28152D5127009E7153 /* DDFileLogger.m in Sources */,
+				A2EACD29152D5127009E7153 /* DDLog.m in Sources */,
+				A2EACD2A152D5127009E7153 /* DDTTYLogger.m in Sources */,
+				A2EACD2E152D513D009E7153 /* MyHTTPConnection.m in Sources */,
+				A25B33D9154B9B1B005E037D /* ViewController.m in Sources */,
+				A2B2E838154F6B1C003A49AF /* MyWebSocket.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A230DCB5152B5D7700902C26 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A230DCB6152B5D7700902C26 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A230DCBB152B5D7700902C26 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A230DCBC152B5D7700902C26 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		A230DCC1152B5D7700902C26 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A230DCC2152B5D7700902C26 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		A230DCD2152B5D7700902C26 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A230DCD3152B5D7700902C26 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A230DCD8152B5D7700902C26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = "";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A230DCD9152B5D7700902C26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SCAN_ALL_SOURCE_FILES_FOR_INCLUDES = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		A230DCDB152B5D7700902C26 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LightDeck/LightDeck-Prefix.pch";
+				INFOPLIST_FILE = "LightDeck/LightDeck-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A230DCDC152B5D7700902C26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LightDeck/LightDeck-Prefix.pch";
+				INFOPLIST_FILE = "LightDeck/LightDeck-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A230DCA2152B5D7600902C26 /* Build configuration list for PBXProject "LightDeck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A230DCD8152B5D7700902C26 /* Debug */,
+				A230DCD9152B5D7700902C26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A230DCDA152B5D7700902C26 /* Build configuration list for PBXNativeTarget "LightDeck" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A230DCDB152B5D7700902C26 /* Debug */,
+				A230DCDC152B5D7700902C26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A230DC9F152B5D7600902C26 /* Project object */;
+}
