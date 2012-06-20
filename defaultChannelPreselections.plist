@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>brightness</key>
+	<array>
+		<integer>14</integer>
+		<integer>28</integer>
+		<integer>21</integer>
+		<integer>7</integer>
+	</array>
+</dict>
+</plist>
